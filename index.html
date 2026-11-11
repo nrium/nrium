@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nリウム リンク集</title>
+<meta name="description" content="Nリウムのリンク集。架争9区・ダリンリヒ・NIWA EELSの各プロジェクト、スケジュール、通販、YouTubeはここから。">
+<meta property="og:title" content="Nリウム リンク集">
+<meta property="og:description" content="架争9区・ダリンリヒ・NIWA EELSの各プロジェクト、スケジュール、通販、YouTubeはここから。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#777777">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@500;800&family=Rajdhani:wght@600;700&family=Murecho:wght@500;700&family=Dela+Gothic+One&family=Shippori+Antique+B1&display=swap">
+<style>
+/* Layout: title on 18% photographic gray, two project columns (each project keeps its own typeface and color),
+   then grouped link lists, a video card, the barter explainer and past events. White cards float on the gray with soft shadows. */
+:root{
+  --bg:#777777; --on-bg:#ffffff; --on-bg-muted:#f2f2f2;
+  --surface:#ffffff; --ink:#2a2d31; --muted:#5f6469; --tint:#D1EDF3; --hair:#e8e8e8; --quiet:#f2f2f3;
+  --accent:#4D4DFF; --orange:#FF815D; --orange-ink:#2a1208;
+  --shadow:0 1px 2px rgba(0,0,0,.10),0 10px 28px rgba(0,0,0,.14);
+  --r-card:16px; --r-chip:10px;
+  --display:"Noto Sans JP","Hiragino Sans",sans-serif;
+  --body:"Noto Sans JP","Hiragino Sans",sans-serif;
+  color-scheme:light; /* always bright, regardless of device setting */
+}
+
+*,*::before,*::after{box-sizing:border-box}
+img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:560px;margin:0 auto;padding-block:56px 72px;display:flex;flex-direction:column;gap:40px}
+a:focus-visible{outline:2px solid #fff;outline-offset:2px;box-shadow:0 0 0 6px var(--ink)}
+
+/* Title */
+.profile{text-align:center}
+h1{font:400 40px/1.15 "Dela Gothic One",var(--display);margin:0;letter-spacing:.03em;color:var(--on-bg)}
+h1 span{color:var(--tint)}
+h1 .en{display:inline-block;margin-left:10px;font:700 15px/1 "Rajdhani",var(--body);letter-spacing:.14em;color:var(--on-bg-muted);vertical-align:.5em}
+
+/* Sections */
+section{display:flex;flex-direction:column;gap:14px}
+h2{margin:0;font:700 15px/1.4 var(--display);letter-spacing:.06em;color:var(--on-bg);display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--on-bg);opacity:.45}
+
+/* Project cards */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.col{display:flex;flex-direction:column;gap:12px;min-width:0}
+.proj{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);padding:16px 14px 14px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.proj h3{margin:0;font-size:18px;font-weight:700;line-height:1.35}
+.proj .desc{margin:2px 0 0;font-size:13px;font-weight:700;line-height:1.5}
+.chips{display:flex;flex-direction:column;gap:6px}
+.chip{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:40px;padding:7px 12px;border-radius:var(--r-chip);font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;transition:filter .15s}
+a.chip:hover{filter:brightness(.95)}
+.chip .lbl{min-width:0;overflow-wrap:anywhere}
+.chip.sm{font-size:12.5px;min-height:36px}
+.chip.off{background:var(--quiet);color:var(--muted)}
+.chip small{flex:none;font:500 10.5px/1 var(--body);letter-spacing:0;white-space:nowrap;opacity:.85;-webkit-text-stroke:0}
+.chip-row{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.chip-row .chip{min-width:0;padding-inline:8px;justify-content:center;flex-wrap:wrap;text-align:center;column-gap:4px}
+.sub{display:flex;flex-direction:column;gap:8px;padding-top:12px;border-top:1px solid var(--hair)}
+.subhead{margin:0;align-self:flex-start;font-size:15px;font-weight:700;color:var(--ink);line-height:1.4;white-space:nowrap}
+.subhead small{font-size:10.5px;font-weight:700}
+.minihead{margin:6px 0 0;font-size:12px;font-weight:700;color:var(--muted);line-height:1.4}
+.chips .minihead:first-child{margin-top:0}
+.info-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.proj .info{margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:3px;font-size:13px;line-height:1.6;color:var(--ink)}
+.proj .info .k{flex:none;font-size:11px;font-weight:800;padding:1px 8px;border-radius:99px}
+.proj .info .v{min-width:0;font-weight:500}
+.proj .info.inline{flex-direction:row;gap:8px}
+.proj .info.inline .k{margin-top:2px}
+.proj .quote{margin:0;font-size:13.5px;font-weight:800;line-height:1.6}
+
+/* 架争9区: sharp, futuristic */
+.f-future{font-family:"Rajdhani","Murecho",var(--body)}
+.f-future h3{font-size:20px;letter-spacing:.08em}
+.f-future .chip,.f-future .subhead,.f-future .minihead{letter-spacing:.04em}
+.f-future .lat{font-size:1.2em;line-height:1}
+.f-future .chip:not(.off){background:#d9f0f6;color:#005866}
+.f-future .desc{color:#005866;font-weight:500;letter-spacing:.03em}
+
+/* NIWA EELS: round and friendly. Genre names large, marketplace names small and light */
+.f-round{font-family:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN",var(--body)}
+.f-round h3{font-weight:800}
+.f-round .chip{font-weight:800}
+.f-round .chip:not(.off){background:#e3ebff;color:#1f5fe0}
+.f-round .desc{color:#1f5fe0;font-weight:500}
+.f-round .info .k{background:#e3ebff;color:#1f5fe0}
+.f-round .quote{color:#1f5fe0}
+.f-round .sub .minihead{font-size:15px;font-weight:800;color:#c94f2b;margin-top:8px}
+.f-round .sub .minihead:first-child{margin-top:0}
+.f-round .sub .chip{font-size:12.5px;font-weight:500;min-height:34px}
+
+/* ダリンリヒ: art gothic (single-weight face, thickened with a hairline stroke) */
+.f-art{font-family:"Shippori Antique B1",var(--body)}
+.f-art h3{font-weight:400;font-size:20px;letter-spacing:.06em}
+.f-art .chip,.f-art .desc,.f-art .subhead,.f-art .minihead{font-weight:400;letter-spacing:.03em}
+.f-art .chip,.f-art .subhead{-webkit-text-stroke:.45px currentColor}
+.f-art .chip small{-webkit-text-stroke:0}
+.f-art .chip:not(.off){background:#f0eafb;color:#7656b8}
+.f-art .desc{color:#8064be;font-size:12px;letter-spacing:.02em;white-space:nowrap}
+
+/* Grouped link lists */
+ul.links{list-style:none;margin:0;padding:0;background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);overflow:hidden}
+ul.links li+li{border-top:1px solid var(--hair)}
+.link{display:flex;align-items:center;gap:14px;min-height:68px;padding:12px 16px;color:inherit;text-decoration:none;transition:background .15s}
+a.link:hover{background:#f7f7f8}
+a.link:focus-visible{outline-offset:-4px;outline-color:var(--ink);box-shadow:none}
+.ico{flex:none;width:42px;height:42px;border-radius:12px;background:var(--tint);color:var(--ink);display:grid;place-items:center}
+.ico svg{width:22px;height:22px}
+.txt{min-width:0;flex:1}
+.txt b{display:block;font-size:16px;font-weight:700;line-height:1.45}
+.txt small{display:block;font-size:13px;color:var(--muted);line-height:1.5}
+.todo{flex:none;font-size:11px;font-weight:500;color:var(--muted);background:var(--quiet);border-radius:99px;padding:3px 10px;white-space:nowrap}
+
+/* Video */
+.videocard{display:block;background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);overflow:hidden;color:inherit;text-decoration:none}
+.screen{position:relative;display:grid;place-items:center;aspect-ratio:16/9;max-width:100%;background:var(--accent);overflow:hidden}
+.screen::before{content:"N";position:absolute;right:-4px;bottom:-40px;font:400 200px/1 "Dela Gothic One",var(--display);color:#fff;opacity:.1}
+.play{position:relative;width:64px;height:64px;border-radius:50%;background:var(--orange);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:transform .15s}
+.play svg{width:28px;height:28px;margin-left:3px;color:var(--orange-ink)}
+a.videocard:hover .play{transform:scale(1.06)}
+.vmeta{display:flex;flex-direction:column;gap:2px;padding:14px 16px 16px}
+.vmeta b{font-size:15px;font-weight:700;line-height:1.55}
+.vmeta small{font-size:13px;color:var(--muted)}
+#featured{display:flex;justify-content:center;margin-top:2px}
+
+/* Embeds (calendar / video) */
+.embed{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);overflow:hidden}
+.embed iframe{display:block;width:100%;border:0}
+.embed.cal iframe{height:460px}
+.embed.vid{aspect-ratio:16/9;max-width:100%}
+.embed.vid iframe{height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;padding:12px 16px;list-style:none;border-top:1px solid var(--hair);font-size:13px;font-weight:700}
+.legend li{display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:50%}
+@media (min-width:600px){.embed.cal iframe{height:600px}}
+
+/* Buttons */
+.wish{display:inline-flex;align-items:center;min-height:46px;padding:9px 22px;border-radius:99px;background:var(--orange);color:var(--orange-ink);font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.16);transition:transform .15s}
+a.wish:hover{transform:translateY(-1px)}
+.wish.off{background:var(--quiet);color:var(--muted);box-shadow:none}
+
+/* Barter explainer */
+.barter-sec{scroll-margin-top:16px}
+.barter{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);padding:22px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:14px;font-size:15px}
+.barter p{margin:0}
+.barter .lead{font:700 20px/1.4 var(--display);color:var(--accent)}
+.steps{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:10px}
+.steps li{counter-increment:s;display:flex;gap:10px;align-items:flex-start}
+.steps li::before{content:counter(s);flex:none;width:26px;height:26px;margin-top:1px;border-radius:50%;background:var(--tint);color:var(--ink);font-size:13px;font-weight:700;display:grid;place-items:center}
+
+/* Past events: white tiles in two columns (a record of past work, not links) */
+ol.events{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ol.events li{min-width:0}
+ol.events a,ol.events span{display:flex;align-items:center;min-height:56px;height:100%;box-sizing:border-box;padding:10px 14px;border-radius:12px;background:var(--surface);color:var(--ink);box-shadow:var(--shadow);font-size:14px;font-weight:700;line-height:1.45;text-decoration:none;overflow-wrap:anywhere}
+
+footer{text-align:center;color:var(--on-bg-muted);font-size:12px;letter-spacing:.06em}
+@media (max-width:360px){.cols,ol.events{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.chip,.link,.play,.wish{transition:none}a.wish:hover,a.videocard:hover .play{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="profile">
+    <h1>N<span>リウム</span><small class="en">-N-rium-</small></h1>
+  </header>
+
+  <section>
+    <h2>プロジェクト</h2>
+    <div class="cols">
+      <div class="col" id="colL"></div>
+      <div class="col" id="colR"></div>
+    </div>
+  </section>
+
+  <section><h2>スケジュール</h2><div class="embed cal" id="calendar"></div></section>
+  <section><h2>ショップ・コミュニティ</h2><ul class="links" id="shop"></ul></section>
+
+  <section>
+    <h2>YouTube</h2>
+    <div id="video"></div>
+    <div id="featured"></div>
+  </section>
+
+  <section id="barter" class="barter-sec">
+    <h2>架争9区を物々交換でゲット</h2>
+    <div class="barter">
+      <p class="lead">一緒に創る体験</p>
+      <p>架争9区のキャラクターNFTは、「物々交換」で販売しています。</p>
+      <ol class="steps">
+        <li>ほしい物リストからアイテムを選んで送ってください。</li>
+        <li>届いたら、お礼にNFTをお送りします。</li>
+        <li>送ってもらったアイテムは、次回以降のNFT制作で実際に使い、作品の一部になります。</li>
+      </ol>
+      <p>あなたが送ったものが、作品として形に残ります。そんな「一緒に創る体験」を、ぜひ味わってみてください。</p>
+      <div id="wishlist"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>過去の開催イベント・企画</h2>
+    <ol class="events" id="events"></ol>
+  </section>
+
+  <footer>© Nリウム</footer>
+</main>
+
+<script>
+/* ===== ここにURLを入れると、その部分がリンクになります（空欄は「準備中」表示） ===== */
+const FEATURED = {button:"チャンネルを見てみる", url:"https://www.youtube.com/@Nrium"};
+
+const PROJECTS = {
+  left: [
+    {name:"架争9区", font:"future", desc:"少年漫画風コスプレOC",
+      links:[{label:"架争9区について",url:"https://note.com/kaso_9ku"},{label:"Charaforio",url:"https://charaforio.com/ja/ip/kaso9ku"},{label:"ホルダーさんは画像使用OK",small:true,url:"https://note.com/kaso_9ku/n/n131ca85b89d5"},{label:"二次創作の販売OK",small:true,url:"https://note.com/kaso_9ku/n/n18992001013e"}],
+      nft:[{label:"リセールでゲット",url:"https://opensea.io/ja/collection/kaso9ku-wip"},{label:"物々交換でゲット",url:"#barter"},{label:"JPYCでゲット",url:"https://ec.jpyc-service.com/shops/nrium?tag=%E6%9E%B6%E4%BA%899%E5%8C%BANFT#products"}]},
+    {name:"ダリンリヒ", font:"art", desc:["ARTIST", "コスプレ･写真･アート"],
+      links:[{label:"作品紹介など",url:"https://darinlich.bitfan.id"},{row:[{label:"X",url:"https://x.com/darinlich"},{label:"Wick",url:"https://wick-share.com/sns/share/ooLT5hVM"}]}],
+      nft:[{heading:"OpenSea"},
+        {label:"Cos Rom Edition（いろんな作品）",url:"https://opensea.io/collection/cosrom-edition"},
+        {label:"リビールをテーマにした作品群",url:"https://opensea.io/collection/the-reveal-"},
+        {label:"寄付NFT",url:"https://opensea.io/ja/0x6f6d2ed08e0b7b9dc447e1581f97803261ed19d5/created"},
+        {heading:"そのほか"},
+        {label:"Manifold",url:""},{label:"object",url:""},{label:"ヘキサ",url:"https://nft.hexanft.com/users/fQDWgb9LlUJCMr/issued"}]},
+  ],
+  right: [
+    {name:"NIWA EELS", font:"round", desc:"ちんあなご属のお魚キャラクター", info:[{k:"口調", inline:true, v:["〜でちん", "〜まにわ"]}, {k:"好きなごはん", v:["プランクトンのコペポくん"]}],
+      quote:"ちんたちは人間の頭にいっぱい生えたいんでちん！",
+      links:[{label:"Ｘ",url:"https://x.com/niwaeels"},{label:"ホームページ",url:"https://niwaeels.bitfan.id"},{label:"ホルダーさん限定グッズ",small:true,url:"https://ec.jpyc-service.com/shops/nrium?tag=%E3%83%9B%E3%83%AB%E3%83%80%E3%83%BC%E6%A7%98%E9%99%90%E5%AE%9A#products"}],
+      nft:[
+        {heading:"いろんなNIWA EELS"},
+        {label:"OpenSea",url:""},{label:"ヘキサ",url:""},
+        {heading:"群れのNIWA EELS"},
+        {label:"OpenSea",url:""},{label:"Zaif INO",url:"https://zaif-ino.com/NFT/138"},
+        {heading:"ちょっと豪華なPFP"},
+        {label:"OpenSea",url:""},
+        {heading:"伝統柄中心PFP"},
+        {label:"OpenSea",url:""},{label:"ヘキサ",url:""}]},
+  ]
+};
+
+// Googleカレンダー：2つのカレンダーを色分けして、1つの表示にまとめて埋め込みます
+const CALENDARS = [
+  {name:"ダリンリヒ", id:"ZGFyaW5saWNoQGdtYWlsLmNvbQ", color:"#b39ddb"},
+  {name:"NIWA EELS", id:"Z296ZW4uc2hvZ29AZ21haWwuY29t", color:"#285ff4"},
+];
+const SHOP = [
+  {title:"通販サイト", sub:"グッズや本の販売（JPYC決済のみ）", icon:"bag", url:"https://ec.jpyc-service.com/shops/nrium"},
+  {title:"Discord", sub:"コミュニティに参加する", icon:"chat", url:"https://discord.gg/Vchf6sa7TN"},
+];
+const VIDEO = {title:"【保存版】暗号資産不要！0円で始めるNFTデジタルアート販売術【HEXA/ヘキサ】", sub:"YouTubeで見る", url:"https://youtu.be/_-5tv0_1w-4"};
+
+// ほしい物リストのURL（物々交換の説明欄のボタン）
+const WISHLIST_URL = "https://gi-pt.com/main/wishlist/fan-view/3a19efa0-064e-1604-ed89-16b188390f7b";
+
+const EVENTS = [
+  {title:"Nリウム展", url:""},
+  {title:"#Nリウム", url:""},
+  {title:"Nリウムガチャ", url:""},
+  {title:"NFT水族館", url:""},
+  {title:"未来芸術展", url:""},
+  {title:"【未来芸術】NFTアーティスト大集結", url:""},
+];
+/* ===== ここまで ===== */
+
+const ICONS = {
+  play:'<path d="M8 5v14l11-7z" fill="currentColor"/>',
+  bag:'<path d="M5 8h14l-1 12H6z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 016 0v2" stroke="currentColor" stroke-width="2" fill="none"/>',
+  cal:'<rect x="3.5" y="5" width="17" height="15" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+  chat:'<path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v9a2 2 0 01-2 2H10l-4 3v-3a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="9.5" cy="10.5" r="1.2" fill="currentColor"/><circle cx="14.5" cy="10.5" r="1.2" fill="currentColor"/>'
+};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ext = url => url.startsWith("#") ? `href="${esc(url)}" data-jump` : `href="${esc(url)}" target="_blank" rel="noopener"`;
+
+// ページ内リンク（物々交換でゲット → 説明欄）
+document.addEventListener("click", e => {
+  const a = e.target.closest("a[data-jump]"); if (!a) return;
+  const t = document.querySelector(a.getAttribute("href")); if (!t) return;
+  e.preventDefault();
+  t.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start"});
+});
+
+// Buttons
+document.getElementById("wishlist").innerHTML = WISHLIST_URL
+  ? `<a class="wish" ${ext(WISHLIST_URL)}>ほしい物リストを見る</a>`
+  : `<span class="wish off">ほしい物リスト（準備中）</span>`;
+document.getElementById("featured").innerHTML = FEATURED.url
+  ? `<a class="wish" ${ext(FEATURED.url)}>${esc(FEATURED.button)}</a>`
+  : `<span class="wish off">${esc(FEATURED.button)}（準備中）</span>`;
+
+// Projects
+function chips(list){
+  return list.map(l => l.row ? `<div class="chip-row">${chips(l.row)}</div>` : l.heading ? `<p class="minihead">${esc(l.heading)}</p>` : l.url
+    ? `<a class="chip${l.small ? " sm" : ""}" ${ext(l.url)}><span class="lbl">${esc(l.label)}</span></a>`
+    : `<span class="chip off${l.small ? " sm" : ""}"><span class="lbl">${esc(l.label)}</span><small>準備中</small></span>`).join("");
+}
+function proj(p){
+  const descs = [].concat(p.desc || []).map(d => `<p class="desc">${esc(d)}</p>`).join("");
+  const info = p.info && p.info.length
+    ? `<div class="info-list">${p.info.map(i => `<p class="info${i.inline ? " inline" : ""}"><span class="k">${esc(i.k)}</span><span class="v">${i.v.map(esc).join("<br>")}</span></p>`).join("")}</div>` : "";
+  const nft = p.nft && p.nft.length
+    ? `<div class="sub"><p class="subhead">NFT<small>（デジタルグッズ）</small></p><div class="chips">${chips(p.nft)}</div></div>` : "";
+  const quote = p.quote ? `<div class="sub"><p class="quote">「${esc(p.quote)}」</p></div>` : "";
+  return `<div class="proj${p.font ? " f-" + p.font : ""}"><div><h3>${esc(p.name)}</h3>${descs}${info}</div><div class="chips">${chips(p.links)}</div>${nft}${quote}</div>`;
+}
+document.getElementById("colL").innerHTML = PROJECTS.left.map(proj).join("");
+document.getElementById("colR").innerHTML = PROJECTS.right.map(proj).join("");
+// 架争9区のフォントは英数字が小さめなので、英数字だけ少し大きくする
+document.querySelectorAll(".f-future").forEach(el => {
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(n => {
+    if (!/[A-Za-z0-9]/.test(n.nodeValue)) return;
+    const frag = document.createDocumentFragment();
+    n.nodeValue.split(/([A-Za-z0-9]+)/).forEach((part, i) => {
+      if (!part) return;
+      if (i % 2) { const s = document.createElement("span"); s.className = "lat"; s.textContent = part; frag.append(s); }
+      else frag.append(part);
+    });
+    n.replaceWith(frag);
+  });
+});
+
+// Link lists
+function rows(id, items){
+  document.getElementById(id).innerHTML = items.map(l => {
+    const inner = `<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[l.icon]}</svg></span>
+      <span class="txt"><b>${esc(l.title)}</b><small>${esc(l.sub)}</small></span>`;
+    return l.url ? `<li><a class="link" ${ext(l.url)}>${inner}</a></li>`
+                 : `<li><div class="link">${inner}<span class="todo">準備中</span></div></li>`;
+  }).join("");
+}
+rows("shop", SHOP);
+
+// Calendar embed (agenda list on phones, month grid on wide screens)
+(function(){
+  const q = new URLSearchParams({ctz:"Asia/Tokyo", hl:"ja", wkst:"2", showTitle:"0", showPrint:"0", showTz:"0", showCalendars:"0",
+    mode: window.innerWidth < 600 ? "AGENDA" : "MONTH"});
+  CALENDARS.forEach(c => { q.append("src", c.id); q.append("color", c.color); });
+  document.getElementById("calendar").innerHTML =
+    `<iframe src="https://calendar.google.com/calendar/embed?${q}" title="スケジュール" loading="lazy"></iframe>
+     <ul class="legend">${CALENDARS.map(c => `<li><i style="background:${esc(c.color)}"></i>${esc(c.name)}</li>`).join("")}</ul>`;
+})();
+
+// Video embed (autoplay off)
+(function(){
+  const m = String(VIDEO.url).match(/(?:youtu\.be\/|v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})/);
+  const box = document.getElementById("video");
+  if (m) { box.className = "embed vid";
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${m[1]}?autoplay=0&rel=0" title="${esc(VIDEO.title)}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`; }
+})();
+
+// Events
+document.getElementById("events").innerHTML = EVENTS.map(e =>
+  `<li>${e.url ? `<a ${ext(e.url)}>${esc(e.title)}</a>` : `<span>${esc(e.title)}</span>`}</li>`).join("");
+</script>
+</body>
+</html>
