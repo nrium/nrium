@@ -263,6 +263,15 @@ PC（900px以上）ではその下を2カラムにする（左：プロジェク
 .pv-p .book .chip { flex: 1 1 0; min-width: 0; justify-content: center; white-space: nowrap; font-size: 12px; padding: 8px 2px; min-height: 40px;}
 }
 
+/* Manifold行の並び：Manifoldは全幅1行、ヘキサとobjktは並べて1行（PC・スマホ共通） */
+.pv-p a.p6-row.is-full { flex: 1 1 100%; min-width: 0; }
+.pv-p a.p6-row.is-half { flex: 1 1 0; min-width: 0; }
+@media (max-width: 600px) {
+.pv-p a.p6-row.is-full { flex-basis: 100%; }
+.pv-p a.p6-row.is-half { flex-basis: 0; padding: 10px 8px; font-size: 13.5px; }
+.pv-p a.p6-row.is-full { padding: 10px 12px; }
+}
+
 /* ============ 固定ミニメニュー（1カラム表示のときだけ、スクロールで上部に固定表示） ============ */
 .mfix { position: fixed; top: 0; left: 0; width: 100%; z-index: 6; font-family: "LINE Seed JP", "Hiragino Sans", "Noto Sans JP", sans-serif;}
 .mfix[hidden] { display: none;}
@@ -372,9 +381,9 @@ PC（900px以上）ではその下を2カラムにする（左：プロジェク
 <a class="p6-row" href="https://opensea.io/collection/the-reveal-" target="_blank" rel="noopener"><span class="rtxt">リビールをテーマにした作品群</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
 <a class="p6-row" href="https://opensea.io/ja/0x6f6d2ed08e0b7b9dc447e1581f97803261ed19d5/created" target="_blank" rel="noopener"><span class="rtxt">寄付NFT</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
 <p class="p6-grp">そのほか</p>
-<a class="p6-row" href="https://app.manifold.xyz/c/minting-me" target="_blank" rel="noopener"><span class="rtxt">Manifold</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
-<a class="p6-row" href="https://objkt.com/collection/KT1JCB6Pa4JaLAHqTR8ikGLpCXZqiwxdWwbw" target="_blank" rel="noopener"><span class="rtxt">objkt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
-<a class="p6-row" href="https://nft.hexanft.com/users/fQDWgb9LlUJCMr/issued" target="_blank" rel="noopener"><span class="rtxt">ヘキサ</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a class="p6-row is-full" href="https://app.manifold.xyz/c/minting-me" target="_blank" rel="noopener"><span class="rtxt">Manifoldでミントする</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a class="p6-row is-half" href="https://nft.hexanft.com/users/fQDWgb9LlUJCMr/issued" target="_blank" rel="noopener"><span class="rtxt">ヘキサ</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+<a class="p6-row is-half" href="https://objkt.com/collection/KT1JCB6Pa4JaLAHqTR8ikGLpCXZqiwxdWwbw" target="_blank" rel="noopener"><span class="rtxt">objkt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
 </div>
 </article>
 
